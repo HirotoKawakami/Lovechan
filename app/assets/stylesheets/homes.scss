@@ -82,41 +82,6 @@ section.story {
 .story-content .story-content-5 {
   margin-top: -16%;
 }
-@media (max-width: 500px) {
-  section.story {
-    background-image: url("/images/love_web背景2-01.png");
-    background-size: 240%;
-    min-height: 100px;
-    position: relative;
-  }
-  .story-title img {
-    margin-left: 37%;
-    margin-bottom: -9%;
-    margin-top: 4%;
-    width: 55%;
-  }
-  .story-content img {
-    width: 98%;
-  }
-  .story-content .story-content-2,
-  .story-content .story-content-3,
-  .story-content .story-content-4,
-  .story-content .story-content-5 {
-    margin-top: -5%;
-  }
-  .story-content .story-content-2,
-  .story-content .story-content-4 {
-    margin-left: 12%;
-  }
-  .story-content .story-content-1,
-  .story-content .story-content-3,
-  .story-content .story-content-5 {
-    margin-right: 15%;
-  }
-  .story-content-5 img {
-    width: 52%;
-  }
-}
 section.profile {
   background-image: url("/images/profile-bg.png");
   min-height: 700px;
@@ -175,7 +140,7 @@ section.twitter {
 }
 section.contact {
   background-image: url("/images/profile-bg.png");
-  min-height: 700px;
+  min-height: 600px;
   position: relative;
   text-align: center;
 }
@@ -184,12 +149,95 @@ section.contact {
   margin-top: 8%;
   width: 33%;
 }
+@media (max-width: 500px) {
+  section.story {
+    background-image: url("/images/love_web背景2-01.png");
+    background-size: 240%;
+    min-height: 100px;
+    position: relative;
+  }
+  .story-title img {
+    margin-left: 37%;
+    margin-bottom: -9%;
+    margin-top: 4%;
+    width: 65%;
+  }
+  .story-content img {
+    width: 98%;
+  }
+  .story-content .story-content-2,
+  .story-content .story-content-3,
+  .story-content .story-content-4,
+  .story-content .story-content-5 {
+    margin-top: -5%;
+  }
+  .story-content .story-content-2,
+  .story-content .story-content-4 {
+    margin-left: 12%;
+  }
+  .story-content .story-content-1,
+  .story-content .story-content-3,
+  .story-content .story-content-5 {
+    margin-right: 15%;
+  }
+  .story-content-5 img {
+    width: 52%;
+  }
+  section.profile {
+    min-height: 850px;
+  }
+  .profile-title img {
+    margin-bottom: -8%;
+    margin-top: 11%;
+    width: 55%;
+  }
+  .profile-content {
+    display: inline-block;
+    margin-top: 15%;
+  }
+  .profile-content-image {
+    float: none;
+  }
+  .profile-content-description {
+    float: none;
+  }
+  .profile-content-description img,
+  .profile-content-image img {
+    width: 90%; 
+  }
+  .goods-image img {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 77%;
+  }
+  section.goods {
+    background-image: url(/images/背景３.png);
+    min-height: 300px;
+    position: relative;
+  }
+  section.twitter {
+    background-image: url(/images/love_web背景2-01.png);
+    background-size: 100%;
+    min-height: 600px;
+    position: relative;
+    text-align: center;
+  }
+  section.contact {
+    background-image: url("/images/profile-bg.png");
+    min-height: 300px;
+    position: relative;
+    text-align: center;
+  }
+}
 /* -------------------------------
  * footer
  * -------------------------------- */
  .footer {
   max-width: 1000px;
-  height: 80px;
+  height: 40px;
   margin: auto;
   display: block;
   background: #fff;

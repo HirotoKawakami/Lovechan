@@ -1,3 +1,102 @@
-// Place all the styles related to the Inquiries controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* -------------------------------
+ * form
+ * -------------------------------- */
+ ul.errors-list {
+  list-style: none;
+  padding-left: 0;
+  background-color: #ff00003d;
+  border-radius: 3px;
+  padding: 16px;
+  color: darkslategray;
+}
+ .inquiry-page {
+  background-image: url(/images/love_web背景2-01.png);
+  margin-top: -8%;
+  background-size: 100%;
+  min-height: 500px;
+  position: relative;
+  padding-top: 40px;
+}
+ .inquiry-page-title img {
+  margin-bottom: -2%;
+  margin-top: 8%;
+  width: 33%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ form#new_inquiry {
+  width: 80%;
+  display: block;
+  margin: 50px auto 100px;
+}
+#new_inquiry label {
+  display: block;
+  color: gray;
+  font-weight: bold;
+}
+input#inquiry_email {
+  border: solid 2px #f1c7d0;
+  border-radius: 7px;
+  height: 23px;
+  width: 70%;
+  margin-bottom: 16px;
+  color: gray;
+}
+textarea#inquiry_message {
+  width: 100%;
+  border: solid 2px #f1c7d0;
+  border-radius: 11px;
+  height: 100px;
+  color: gray;
+  font-size: 13px;
+  padding: 7px;
+}
+input.btn.btn-primary {
+  display: block;
+  margin: 12px auto;
+  padding: 4px 65px;
+  border: solid 1px pink;
+  border-radius: 20px;
+  background-color: pink;
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+}
+input#inquiry_email:focus,
+textarea#inquiry_message:focus {
+  
+}
+@media (min-width: 500px) {
+  .inquiry-page-title img {
+    margin-bottom: -2%;
+    margin-top: 8%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form#new_inquiry {
+    width: 50%;
+    display: block;
+    margin: 100px auto;
+  }
+  input#inquiry_email {
+    border: solid 2px #f1c7d0;
+    border-radius: 7px;
+    height: 32px;
+    width: 64%;
+    margin-bottom: 16px;
+    font-size: 17px;
+    color: gray;
+  }
+textarea#inquiry_message {
+  width: 100%;
+  border: solid 2px #f1c7d0;
+  border-radius: 11px;
+  height: 100px;
+  font-size: 17px;
+  color: gray;
+  padding: 12px;
+  }
+}
