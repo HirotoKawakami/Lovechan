@@ -103,13 +103,15 @@ section.profile {
 .profile-content-description {
   float: right;
 }
-.profile-content-description img,
+.profile-content-description img {
+  width: 107%;
+}
 .profile-content-image img {
   width: 120%;
 }
 section.goods {
   background-image: url("/images/背景３.png");
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
 }
 .goods-bg img {
@@ -125,6 +127,23 @@ section.goods {
   right: 0;
   margin: auto;
   width: 60%;
+}
+img.good-logo {
+  width: 26%;
+  position: absolute;
+  margin: 0;
+  left: 17%;
+  top: 26%;
+}
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.cloud-2 {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
 }
 section.twitter {
   background-image: url("/images/love_web背景2-01.png");
@@ -148,6 +167,10 @@ section.contact {
   margin-bottom: -8%;
   margin-top: 8%;
   width: 33%;
+}
+.contact-link {
+  display: inline-block;
+  margin-top: 16%;
 }
 @media (max-width: 500px) {
   section.story {
@@ -184,7 +207,7 @@ section.contact {
     width: 52%;
   }
   section.profile {
-    min-height: 850px;
+    min-height: 950px;
   }
   .profile-title img {
     margin-bottom: -8%;
@@ -201,9 +224,16 @@ section.contact {
   .profile-content-description {
     float: none;
   }
-  .profile-content-description img,
+  .profile-content-description img {
+    width: 104%; 
+  }
   .profile-content-image img {
-    width: 90%; 
+    width: 60%;
+  }
+  section.goods {
+    background-image: url(/images/背景３.png);
+    min-height: 450px;
+    position: relative;
   }
   .goods-image img {
     position: absolute;
@@ -211,12 +241,23 @@ section.contact {
     left: 0;
     right: 0;
     margin: auto;
-    width: 77%;
+    width: 86%;
   }
-  section.goods {
-    background-image: url(/images/背景３.png);
-    min-height: 300px;
-    position: relative;
+  img.good-logo {
+    width: 42%;
+    position: absolute;
+    top: 8%;
+    left: -44%;
+  }
+  .cloud {
+    position: absolute;
+    top: -14%;
+    left: 5%;
+}
+  .cloud-2 {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
   }
   section.twitter {
     background-image: url(/images/love_web背景2-01.png);
@@ -247,4 +288,28 @@ section.contact {
   padding: 0 30px;
   display: block;
   box-sizing: border-box;
+}
+/* -------------------------------
+ * animation
+ * -------------------------------- */
+ .story-content .story-content-1,
+ .story-content .story-content-5,
+ .cloud {
+  animation: img_box_9955 3s linear infinite;
+}
+.story-content .story-content-3,
+.cloud-2 {
+  animation: img_box_9955 2s linear infinite;
+}
+.story-content .story-content-2 {
+  animation: img_box_9955 5s linear infinite;
+}
+.story-content .story-content-4 {
+  animation: img_box_9955 4s linear infinite;
+}
+@keyframes img_box_9955 {
+  0% { transform: translateY(0) }
+  33.33333% { transform: translateY(-20px) }
+  66.66667% { transform: translateY(10) }
+  100% { transform: translateY(0) }
 }
