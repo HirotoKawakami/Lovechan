@@ -10,7 +10,7 @@
   color: darkslategray;
 }
  .inquiry-page {
-  background-image: url(/images/love_web背景2-01.png);
+  background-image: url(/images/twitter-bg.png);
   margin-top: -8%;
   background-size: 100%;
   min-height: 800px;
@@ -28,7 +28,17 @@
  form#new_inquiry {
   width: 80%;
   display: block;
-  margin: 50px auto 100px;
+  margin: 50px auto;
+}
+.link-to-top {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.link-to-top a {
+  color: gray;
+  text-decoration: none;
 }
 #new_inquiry label {
   display: block;
@@ -38,7 +48,7 @@
 input#inquiry_email {
   border: solid 2px #f1c7d0;
   border-radius: 7px;
-  height: 23px;
+  height: 32px;
   width: 70%;
   margin-bottom: 16px;
   color: gray;

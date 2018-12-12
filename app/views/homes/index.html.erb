@@ -1,9 +1,9 @@
 <div class="content">
   <section class="top">
-    <div>Top</div>
+    <div class="top-logo"><%= image_tag("/images/top_love-01.png") %></div>
   </section>
   <section class="story">
-    <div class="story-title"><%= image_tag ("/images/STORY.png") %></div>
+    <div class="story-title"><%= image_tag("/images/story_logo.png") %></div>
     <div class="story-content">
       <div class="story-content-1"><%= image_tag("/images/STORY1.png") %></div>
       <div class="story-content-2"><%= image_tag("/images/STORY2-01.png") %></div>
@@ -15,22 +15,35 @@
   <section class="profile">
     <div class="profile-title"><%= image_tag("/images/profile.png") %></div>
     <div class="profile-content">
-      <div class="profile-content-image"><%= image_tag("/images/profile3-01.png") %></div>
+      <div class="profile-content-image">
+        <%= image_tag("/images/profile3-01.png") %>
+        <ul class="profile-content-image-list">
+          <li><%= image_tag("/images/profile4.png") %></li>
+          <li><%= image_tag("/images/profile5.png") %></li>
+          <li><%= image_tag("/images/profile6.png") %></li>
+        </ul>
+      </div>
       <div class="profile-content-description"><%= image_tag("/images/profile_1_アートボード 1.png") %></div>
     </div>
   </section>
   <section class="goods">
-    <div class="goods-bg"><%= image_tag("/images/背景２.png") %></div>
     <div class="cloud"><%= image_tag("/images/twitter_cloud1.png") %></div>
     <div class="cloud-2"><%= image_tag("/images/twitter_cloud1.png") %></div>
     <div class="goods-image"><%= image_tag("/images/goods_1_アートボード 1.png") %><%= image_tag("/images/goods_logo.png", class: "good-logo") %></div>
   </section>
   <section class="twitter">
     <div class="twitter-title"><%= image_tag("/images/Twitter.png") %></div>
+    <%= link_to "https://twitter.com/Salud_jp?ref_src=twsrc%5Etfw", target: "_blank" do %>
+      <%= image_tag("/images/follow-button.png", class: "follow-button") %>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <% end %>
+    <div class="twitter-timeline"><a class="twitter-timeline" href="https://twitter.com/Salud_jp?ref_src=twsrc%5Etfw">Tweets by Salud_jp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
   </section>
   <section class="contact">
     <div class="contact-title"><%= image_tag("/images/お問合せ.png") %></div>
-    <div class="contact-link"><%= link_to("お問い合わせはこちら", new_inquiry_path) %></div>
+    <%= link_to new_inquiry_path do %>
+      <div class="contact-image"><%= image_tag("/images/メール_アートボード 1.png")%></div>
+    <% end %>
   </section>
 </div>
 <div id="page_top"><a href="#"></a></div>

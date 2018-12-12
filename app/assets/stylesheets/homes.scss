@@ -6,7 +6,26 @@ body {
   // background-image: url("/images/test.png");
   // background-size: cover;
 }
-
+.error-404 {
+  font-size: 81px;
+  font-weight: bold;
+  color: #e89ec9;
+}
+.contact p {
+  font-size: 30px;
+  color: gray;
+}
+@media (max-width: 500px) {
+  .error-404 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e89ec9;
+  }
+  .contact p {
+    font-size: 17px;
+    color: gray;
+  }
+}
 #page_top{
   position: fixed;
   right: 30px;
@@ -41,10 +60,24 @@ body {
 /* -------------------------------
  * contents
  * -------------------------------- */
-.content {
+ .content {
   margin: auto;
   max-width: 1000px;
-  background-color: #ecc9db;
+  background-color: #c1b1c6;
+}
+section.top {
+  background-image: url(/images/top-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.top-logo {
+  display: block;
+  text-align: center;
+}
+.top-logo img {
+    margin-top: -3%;
+    width: 68%;
 }
 section.story {
   background-image: url("/images/love_web背景2-01.png");
@@ -59,13 +92,16 @@ section.story {
   margin-left: 30%;
   margin-bottom: -8%;
   margin-top: 0%;
-  width: 35%;
+  width: 47%;
 }
 .story-content {
   text-align: center;
 }
 .story-content img {
   width: 55%;
+}
+.story-content-1 img {
+  width: 73%;
 }
 .story-content .story-content-1,
 .story-content .story-content-3,
@@ -83,7 +119,7 @@ section.story {
   margin-top: -16%;
 }
 section.profile {
-  background-image: url("/images/profile-bg.png");
+  background-image: url("/images/twitter-bg.png");
   min-height: 700px;
   position: relative;
   text-align: center;
@@ -104,21 +140,27 @@ section.profile {
   float: right;
 }
 .profile-content-description img {
-  width: 107%;
+  width: 120%;
+  margin-left: -41px;
 }
 .profile-content-image img {
-  width: 120%;
+  width: 100%;
+}
+ul.profile-content-image-list {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  display: inline-block;
+}
+.profile-content-image-list li {
+  display: inline-block;
+  margin: 10px;
+  width: 15%;
 }
 section.goods {
-  background-image: url("/images/背景３.png");
+  background-image: url("/images/twitter-bg.png");
   min-height: 700px;
   position: relative;
-}
-.goods-bg img {
-  width: 100%;
-  position: absolute;
-  top: -70px;
-  left: 0;
 }
 .goods-image img {
   position: absolute;
@@ -146,20 +188,35 @@ img.good-logo {
   right: 5%;
 }
 section.twitter {
-  background-image: url("/images/love_web背景2-01.png");
+  background-image: url("/images/profile-bg.png");
   background-size: 100%;
   min-height: 700px;
   position: relative;
   text-align: center;
+  margin-bottom: -20px;
 }
 .twitter-title img {
   margin-bottom: -8%;
   margin-top: 8%;
   width: 33%;
 }
+img.follow-button {
+  width: 23%;
+  margin-top: 13%;
+}
+.twitter-timeline.twitter-timeline-error {
+  width: 40%;
+  height: 500px;
+  overflow-y: scroll;
+  display: block;
+  margin: 17px auto 0;
+  border-radius: 13px;
+  border: solid 24px #ecc9db;
+}
 section.contact {
   background-image: url("/images/profile-bg.png");
   min-height: 600px;
+  background-size: 100%;
   position: relative;
   text-align: center;
 }
@@ -172,19 +229,28 @@ section.contact {
   display: inline-block;
   margin-top: 16%;
 }
+.contact-image img {
+  width: 35%;
+  margin-top: 40px;
+}
 @media (max-width: 500px) {
+  .top-logo img {
+    margin-top: 6%;
+    width: 84%;
+  }
   section.story {
     background-image: url("/images/love_web背景2-01.png");
     background-size: 240%;
     min-height: 100px;
     position: relative;
+    margin-top: -37px;
   }
   .story-title img {
-    margin-left: 37%;
+    margin-left: 28%;
     margin-bottom: -9%;
     margin-top: 4%;
-    width: 65%;
-  }
+    width: 75%;
+}
   .story-content img {
     width: 98%;
   }
@@ -207,7 +273,11 @@ section.contact {
     width: 52%;
   }
   section.profile {
-    min-height: 950px;
+    min-height: 850px;
+  }
+  .cloud img,
+  .cloud-2 img  {
+    width: 69%;
   }
   .profile-title img {
     margin-bottom: -8%;
@@ -223,16 +293,23 @@ section.contact {
   }
   .profile-content-description {
     float: none;
+    margin-top: -34px;
   }
   .profile-content-description img {
-    width: 104%; 
+    margin-left: 0;
+    width: 103%;
   }
   .profile-content-image img {
     width: 60%;
   }
+  .profile-content-image-list li {
+    display: inline-block;
+    margin: -11px;
+    width: 27%;
+  }
   section.goods {
-    background-image: url(/images/背景３.png);
-    min-height: 450px;
+    background-image: url("/images/twitter-bg.png");
+    min-height: 440px;
     position: relative;
   }
   .goods-image img {
@@ -253,24 +330,47 @@ section.contact {
     position: absolute;
     top: -14%;
     left: 5%;
-}
+  }
   .cloud-2 {
     position: absolute;
-    bottom: 0%;
-    right: 5%;
+    bottom: 10%;
+    right: -17%;
   }
   section.twitter {
-    background-image: url(/images/love_web背景2-01.png);
+    background-image: url(/images/profile-bg.png);
     background-size: 100%;
     min-height: 600px;
     position: relative;
     text-align: center;
+  }
+  .twitter-title img {
+    margin-bottom: -8%;
+    margin-top: 8%;
+    width: 45%;
+  }
+  img.follow-button {
+    width: 31%;
+    margin-top: 13%;
+  }
+  .twitter-timeline.twitter-timeline-error {
+    width: 63%;
+    height: 350px;
+    overflow-y: scroll;
+    display: block;
+    margin: 17px auto 0;
+    border-radius: 23px;
+    border: solid 5px #f577af;
   }
   section.contact {
     background-image: url("/images/profile-bg.png");
     min-height: 300px;
     position: relative;
     text-align: center;
+  }
+  .contact-title img {
+    margin-bottom: -8%;
+    margin-top: 8%;
+    width: 45%;
   }
 }
 /* -------------------------------
@@ -294,7 +394,8 @@ section.contact {
  * -------------------------------- */
  .story-content .story-content-1,
  .story-content .story-content-5,
- .cloud {
+ .cloud,
+ .top-logo {
   animation: img_box_9955 3s linear infinite;
 }
 .story-content .story-content-3,
