@@ -3,6 +3,8 @@ body {
   display: block;
   margin: 0;
   background-color: #f9d4e7;
+  width: 100vw;
+  font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   // background-image: url("/images/test.png");
   // background-size: cover;
 }
@@ -246,7 +248,7 @@ section.contact {
     margin-top: -37px;
   }
   .story-title img {
-    margin-left: 28%;
+    margin-left: 22%;
     margin-bottom: -9%;
     margin-top: 4%;
     width: 75%;
@@ -353,13 +355,15 @@ section.contact {
     margin-top: 13%;
   }
   .twitter-timeline.twitter-timeline-error {
-    width: 63%;
+    width: 80%;
     height: 350px;
     overflow-y: scroll;
     display: block;
     margin: 17px auto 0;
-    border-radius: 23px;
-    border: solid 5px #f577af;
+    border-radius: 7px;
+    border: solid 12px #f577af;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
   }
   section.contact {
     background-image: url("/images/profile-bg.png");
@@ -381,12 +385,15 @@ section.contact {
   height: 40px;
   margin: auto;
   display: block;
-  background: #fff;
+  text-align: center;
   font-size: 16px;
+  background-color: #f3d7e7;
 }
 .footer-inner {
   padding: 0 30px;
   display: block;
+  color: gray;
+  margin-top: 10px;
   box-sizing: border-box;
 }
 /* -------------------------------
