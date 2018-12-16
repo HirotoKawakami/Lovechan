@@ -63,6 +63,7 @@ textarea#inquiry_message {
   padding: 7px;
 }
 input.btn.btn-primary {
+  -webkit-appearance: none !important;
   display: block;
   margin: 12px auto;
   padding: 4px 65px;
