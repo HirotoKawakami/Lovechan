@@ -11,18 +11,12 @@ module ApplicationHelper
       icon: image_url('/love_icon-01.png'),
       og: {
         site_name: 'ラヴリーエンジェル♡ | ラヴちゃん',
-        title: 'ラヴちゃん Official Web Site | Lafary',
+        title: 'ラヴリーエンジェル♡ | ラヴちゃん',
         description: 'ときめきラヴリー♡夢見るうさぎのおんなのこです♡',
         type: 'website',
         url: request.original_url,
         image: image_url('/love_icon-01.png'),
         locale: 'ja_JP'
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title: 'ラヴリーエンジェル♡ | ラヴちゃん',
-        description: 'ときめきラヴリー♡夢見るうさぎのおんなのこです♡',
-        image: image_url('/love_icon-01.png')
       }
     }
   end

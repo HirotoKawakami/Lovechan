@@ -45,8 +45,8 @@ body {
 @media (max-width: 500px) {
   #page_top{
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
   }
   #page_top a {
     position: relative;
@@ -336,7 +336,11 @@ section.contact {
   .cloud-2 {
     position: absolute;
     bottom: 10%;
-    right: -17%;
+    width: 30%;
+    right: 6%;
+  }
+  .cloud-2 img {
+    width: 120%;
   }
   section.twitter {
     background-image: url(/images/profile-bg.png);
