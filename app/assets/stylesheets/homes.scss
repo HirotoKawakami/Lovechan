@@ -164,20 +164,20 @@ section.goods {
   min-height: 700px;
   position: relative;
 }
-.goods-image img {
+.goods-image svg {
   position: absolute;
-  top: 18%;
-  left: 0;
+  top: 23%;
+  left: -90px;
   right: 0;
   margin: auto;
-  width: 60%;
+  width: 77%;
 }
 img.good-logo {
-  width: 26%;
+  width: 31%;
   position: absolute;
   margin: 0;
-  left: 17%;
-  top: 26%;
+  left: 18%;
+  top: 20%;
 }
 .cloud {
   position: absolute;
@@ -186,7 +186,7 @@ img.good-logo {
 }
 .cloud-2 {
   position: absolute;
-  bottom: 10%;
+  bottom: -2%;
   right: 5%;
 }
 section.twitter {
@@ -314,19 +314,19 @@ section.contact {
     min-height: 440px;
     position: relative;
   }
-  .goods-image img {
+  .goods-image svg {
     position: absolute;
-    top: 7%;
-    left: 0;
+    top: 15%;
+    left: -82px;
     right: 0;
     margin: auto;
-    width: 86%;
+    width: 110%;
   }
   img.good-logo {
-    width: 42%;
+    width: 49%;
     position: absolute;
-    top: 8%;
-    left: -44%;
+    top: 10%;
+    left: 3%;
   }
   .cloud {
     position: absolute;
@@ -335,7 +335,7 @@ section.contact {
   }
   .cloud-2 {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     width: 30%;
     right: 6%;
   }
